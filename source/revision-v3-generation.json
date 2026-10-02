@@ -1,0 +1,19 @@
+{
+  "revision": "1.1-direction-revision",
+  "supersededDirections": {
+    "000": "source/final-vertical-generation.json",
+    "008": "source/final-vertical-generation.json"
+  },
+  "approvedSha256": "6ce3581685d2990b14daac92619d963f214f3f27f7735df34157d89e412ae950",
+  "approvedFile": "source/revisions/look-v3/002.png",
+  "scope": [
+    "16 look directions",
+    "error/002",
+    "error/003",
+    "task_received/001"
+  ],
+  "notes": [
+    "Direction and posture source revisions are retained in source/revisions/.",
+    "Final V1.2 replaces directions 000 and 008; see final-vertical-generation.json."
+  ]
+}

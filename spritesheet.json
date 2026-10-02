@@ -1,0 +1,298 @@
+{
+  "spriteVersionNumber": 2,
+  "size": [
+    1536,
+    2288
+  ],
+  "grid": [
+    8,
+    11
+  ],
+  "cell": [
+    192,
+    208
+  ],
+  "rows": [
+    {
+      "row": 0,
+      "state": "idle",
+      "source": "idle",
+      "frameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durationMs": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ]
+    },
+    {
+      "row": 1,
+      "state": "running-right",
+      "source": "walk_right",
+      "frameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ]
+    },
+    {
+      "row": 2,
+      "state": "running-left",
+      "source": "walk_left",
+      "frameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ]
+    },
+    {
+      "row": 3,
+      "state": "waving",
+      "source": "greeting",
+      "frameIndices": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "durationMs": [
+        140,
+        140,
+        140,
+        280
+      ]
+    },
+    {
+      "row": 4,
+      "state": "jumping",
+      "source": "task_received",
+      "frameIndices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durationMs": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ]
+    },
+    {
+      "row": 5,
+      "state": "failed",
+      "source": "error",
+      "frameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durationMs": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240
+      ]
+    },
+    {
+      "row": 6,
+      "state": "waiting",
+      "source": "waiting_approval",
+      "frameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        260
+      ]
+    },
+    {
+      "row": 7,
+      "state": "running",
+      "source": "working",
+      "frameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "durationMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ]
+    },
+    {
+      "row": 8,
+      "state": "review",
+      "source": "thinking",
+      "frameIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ]
+    }
+  ],
+  "neutralCell": [
+    0,
+    6
+  ],
+  "lookDirections": [
+    {
+      "degrees": 0.0,
+      "row": 9,
+      "column": 0
+    },
+    {
+      "degrees": 22.5,
+      "row": 9,
+      "column": 1
+    },
+    {
+      "degrees": 45.0,
+      "row": 9,
+      "column": 2
+    },
+    {
+      "degrees": 67.5,
+      "row": 9,
+      "column": 3
+    },
+    {
+      "degrees": 90.0,
+      "row": 9,
+      "column": 4
+    },
+    {
+      "degrees": 112.5,
+      "row": 9,
+      "column": 5
+    },
+    {
+      "degrees": 135.0,
+      "row": 9,
+      "column": 6
+    },
+    {
+      "degrees": 157.5,
+      "row": 9,
+      "column": 7
+    },
+    {
+      "degrees": 180.0,
+      "row": 10,
+      "column": 0
+    },
+    {
+      "degrees": 202.5,
+      "row": 10,
+      "column": 1
+    },
+    {
+      "degrees": 225.0,
+      "row": 10,
+      "column": 2
+    },
+    {
+      "degrees": 247.5,
+      "row": 10,
+      "column": 3
+    },
+    {
+      "degrees": 270.0,
+      "row": 10,
+      "column": 4
+    },
+    {
+      "degrees": 292.5,
+      "row": 10,
+      "column": 5
+    },
+    {
+      "degrees": 315.0,
+      "row": 10,
+      "column": 6
+    },
+    {
+      "degrees": 337.5,
+      "row": 10,
+      "column": 7
+    }
+  ]
+}

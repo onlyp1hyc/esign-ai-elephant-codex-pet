@@ -1,0 +1,42 @@
+{
+  "version": "1.2-final",
+  "workingSize": 512,
+  "baseline": 468,
+  "headWidth": 422,
+  "sheets": {
+    "greeting": {"grid": [3,2], "select": [0,1,2,3,2,5], "duration": [200,160,160,180,160,280], "label": "欢迎", "event": "startup", "native": "waving", "representative": 2},
+    "idle": {"grid": [3,2], "select": [0,1,2,3,4,5], "duration": [620,180,120,140,160,620], "label": "待机", "event": "idle", "native": "idle", "representative": 0},
+    "task_received": {"grid": [3,2], "select": [0,1,2,3,4,5], "yOffset": [0,3,-12,-24,-12,0], "overrides": {"1": {"file": "source/revisions/posture-v3/task_received_001.png"}}, "duration": [180,140,140,200,140,320], "label": "收到任务", "event": "new_task", "native": "jumping", "representative": 3},
+    "thinking": {"grid": [3,2], "select": [0,1,2,3,4,5], "duration": [480,280,180,300,220,480], "label": "思考", "event": "reasoning", "native": "review", "representative": 0},
+    "working": {"grid": [4,2], "select": [0,1,2,3,4,6,7,1], "duration": [200,160,180,160,160,160,180,240], "label": "执行中", "event": "running", "native": "running", "representative": 0},
+    "waiting_approval": {"grid": [3,2], "select": [0,1,2,3,4,5], "duration": [440,280,180,240,240,520], "label": "等待确认", "event": "waiting_user", "native": "waiting", "representative": 0},
+    "success": {"grid": [3,2], "select": [0,1,2,3,4,5], "duration": [180,160,220,260,220,360], "label": "完成", "event": "success", "native": "jumping", "fallback": true, "representative": 2},
+    "error": {"grid": [4,2], "select": [0,1,2,3,4,5,6,7], "overrides": {"2": {"file": "source/revisions/posture-v3/error_002.png", "feetWidth": 182}, "3": {"file": "source/revisions/posture-v3/error_003.png", "feetWidth": 182}}, "duration": [240,220,240,240,180,240,260,440], "label": "遇到问题", "event": "failure", "native": "failed", "representative": 2},
+    "long_task": {"grid": [3,2], "select": [0,1,2,3,4,5], "duration": [600,240,320,400,280,620], "label": "长任务", "event": "long_running", "native": "running", "fallback": true, "representative": 1},
+    "walk_right": {"grid": [4,2], "select": [0,1,2,3,4,5,6,7], "sideView": true},
+    "walk_left": {"grid": [4,2], "select": [0,1,2,3,4,5,6,7], "sideView": true},
+    "look": {
+      "feetWidth": 170,
+      "files": [
+        "source/revisions/look-v3/000.png", "source/revisions/look-v3/001.png",
+        "source/revisions/look-v3/002.png", "source/revisions/look-v3/003.png",
+        "source/revisions/look-v3/004.png", "source/revisions/look-v3/005.png",
+        "source/revisions/look-v3/006.png", "source/revisions/look-v3/007.png",
+        "source/revisions/look-v3/008.png", "source/revisions/look-v3/009.png",
+        "source/revisions/look-v3/010.png", "source/revisions/look-v3/011.png",
+        "source/revisions/look-v3/012.png", "source/revisions/look-v3/013.png",
+        "source/revisions/look-v3/014.png", "source/revisions/look-v3/015.png"
+      ],
+      "select": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    }
+  },
+  "selectionNotes": [
+    "最终包将用户确认的上下V3样图原样纳入look/000与look/008；鼻轴分别朝12点与6点，保留相连双瓣鼻尖，上看两笔简化鼻孔，下看不画鼻孔。其余88个工作帧保持V1.1内容不变。来源与确认记录见final-vertical-generation.json。",
+    "greeting 原始第5格换手，弃用；回摆复用第3格。",
+    "working 原始第6格鼻尖反向，弃用；循环末尾复用第2格。",
+    "旧整张 look 表存在耳朵/鼻根/双眼共同透视问题，已弃用。以用户确认的 upper-right-v2 为002原画，其他15方向逐张内置图像编辑，保留唯一鼻尖、近远耳遮挡和双眼共同视线。",
+    "look-v3 使用双脚宽170px、足底468px及脚部中心对齐，仅等比缩放整图；不再把不同转头角度强行放大到相同耳宽。",
+    "所有角色均由内置 image_gen 生成；脚本仅做透明清理、连通域裁切、等比缩放、基线对齐和拼接，不绘制或重塑角色。",
+    "task_received 仅以整帧位移恢复统一基线中的轻跳轨迹，不做拉伸变形。"
+  ]
+}

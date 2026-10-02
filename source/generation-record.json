@@ -1,0 +1,12 @@
+{
+  "version": "1.2-final",
+  "generationMode": "AI-generated artwork based on the company mascot; no character drawing in the build scripts.",
+  "licenseNotice": "All mascot artwork and derivatives are excluded from MIT. See ../BRAND_ASSETS.md.",
+  "masterFile": "source/generated/character_master.png",
+  "selectionManifest": "source/artwork.json",
+  "revisionRecord": "source/revision-v3-generation.json",
+  "finalRevisionRecord": "source/final-vertical-generation.json",
+  "compatibilityRecord": "source/client-compatibility.json",
+  "rebuild": "Retained source artwork is sufficient for offline rebuilding; no model or credentials required.",
+  "publicationNote": "Private generation prompts, local paths, job identifiers and conversation excerpts are not distributed."
+}

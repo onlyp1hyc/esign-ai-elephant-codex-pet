@@ -1,0 +1,19 @@
+{
+  "revision": "1.2-final",
+  "status": "approved_and_integrated",
+  "scope": "Adopted the approved up/down artwork; other runtime frames unchanged.",
+  "samples": [
+    {
+      "direction": "up",
+      "file": "source/revisions/look-v3/000.png",
+      "sha256": "1d1daadb7acb715dd9a62b1b9c9950823e0e118632f308cf7b8b4970360d0936",
+      "degrees": 0
+    },
+    {
+      "direction": "down",
+      "file": "source/revisions/look-v3/008.png",
+      "sha256": "82676f806ad3fd81621198f54db20f2b1526abb438f1244f8057f930221539fb",
+      "degrees": 180
+    }
+  ]
+}

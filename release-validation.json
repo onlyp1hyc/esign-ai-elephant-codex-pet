@@ -1,0 +1,34 @@
+{
+  "version": "v1.2.0",
+  "checkedOn": "2026-10-02",
+  "acceptedInstaller": {
+    "name": "esign-ai-elephant-codex-v2.zip",
+    "bytes": 1551973,
+    "sha256": "faacd5cf746abadc9653d7e0d610fe99df82b83b3a8460fe3ecc5173381409ba"
+  },
+  "runtimePreserved": true,
+  "resources": {
+    "checksPassed": 1953,
+    "frameFiles": 90,
+    "distinctFrameImages": 88
+  },
+  "codexV2": {
+    "installedClient": "26.928.40906",
+    "build": "12694",
+    "errors": 0,
+    "warnings": 0,
+    "transparentRGBResiduePixels": 0
+  },
+  "demoLogic": "passed; no interactive browser UI test performed by this script",
+  "manualClientAcceptance": "maintainer-confirmed before public release preparation",
+  "isolatedBuild": "passed; source/frame and runtime atlas pixels match; encoding and preview-label typography can differ by environment",
+  "archives": "both installation and optional full archive validated against local files and SHA-256",
+  "publicationAudit": "no findings in public candidate files, archive contents or image metadata; private drafts, references and raw logs excluded",
+  "fullArchiveReleaseAsset": false,
+  "licenseBoundary": "MIT applies to maintainer-authored code/tooling/engineering/original documentation; company mascot and brand assets excluded",
+  "secretScan": {
+    "tool": "Gitleaks 8.30.1",
+    "scope": "Public candidate files and both ZIP archives; redacted output",
+    "findings": 0
+  }
+}

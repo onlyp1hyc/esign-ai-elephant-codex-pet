@@ -1,0 +1,115 @@
+{
+  "checkedOn": "2026-10-02",
+  "target": "local desktop custom pet, Codex V2",
+  "installedVersion": "26.928.40906",
+  "installedBuildVersion": "12694",
+  "installedReleaseChannel": "prod",
+  "updateCheck": {
+    "status": "available",
+    "availableVersion": "26.930.21537",
+    "availableBuildVersion": "12776",
+    "installedOrDownloadedByThisTask": false,
+    "candidateReleaseRuntimeTested": false
+  },
+  "bundleEvidence": [
+    {
+      "path": "references/codex-pet-contract.md",
+      "sha256": "8f9c271e0a8269e57cd27cedeff1317975ea5f772f2549572aeefa580d9d58d3"
+    },
+    {
+      "path": "references/animation-rows.md",
+      "sha256": "d27b08d599e73cf6a65a03d2b8ad49e9ad408e18292636164e7b2d2f1815615f"
+    },
+    {
+      "path": "scripts/validate_atlas.py",
+      "sha256": "ebbbc77cfbd27ef8476ac6fda716e864cf372a2ed4c2beb27ebdb2487e972194"
+    }
+  ],
+  "publicDocumentation": [
+    {
+      "url": "https://learn.chatgpt.com/docs/pets",
+      "finding": "Desktop custom pets are local; refresh and select in Settings > Pets. Web uploads are a separate 1536×1872 entry point."
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/reference/commands",
+      "finding": "Current pet install links support spriteVersionNumber 1 or 2. Default is 1; V2 must be explicit. HTTPS is required for imageUrl; no fabricated local install deep link."
+    }
+  ],
+  "packageContract": {
+    "spriteVersionNumber": 2,
+    "size": [
+      1536,
+      2288
+    ],
+    "grid": [
+      8,
+      11
+    ],
+    "cell": [
+      192,
+      208
+    ],
+    "manifestFields": [
+      "id",
+      "displayName",
+      "description",
+      "spriteVersionNumber",
+      "spritesheetPath"
+    ],
+    "neutralCellRowColumn": [
+      0,
+      6
+    ],
+    "lookDirectionRows": [
+      9,
+      10
+    ],
+    "lookDirections": 16,
+    "upDegrees": 0,
+    "downDegrees": 180,
+    "occupiedCells": 74,
+    "emptyCells": 14,
+    "imageFormat": "lossless WebP, genuine RGBA transparency"
+  },
+  "validationResult": {
+    "installedClientValidatorPassed": true,
+    "atlasErrors": 0,
+    "atlasWarnings": 0,
+    "transparentRGBResiduePixels": 0,
+    "packageChecksPassed": 1953,
+    "demoStaticLogicPassed": true,
+    "approvedSourcesRetained": [
+      "up V3",
+      "upper-right V2",
+      "down V3"
+    ],
+    "changesSinceV11": {
+      "workingFrames": 2,
+      "unchangedWorkingFrames": 88,
+      "atlasCellsRowColumn": [
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ]
+    },
+    "localDetailedReports": [
+      "qa/current-client-atlas-validation.json",
+      "qa/package-validation.json",
+      "qa/revision-validation.json"
+    ]
+  },
+  "runtimeTested": true,
+  "conclusionScope": "Recorded installed-client V2 contract checks and maintainer-reported runtime acceptance. The offered update was not installed or runtime-tested.",
+  "bundleEvidenceLocation": "hatch-pet resources bundled with the recorded installed desktop application",
+  "runtimeTestEvidence": {
+    "reportedOn": "2026-10-02",
+    "source": "Maintainer confirmation before public release preparation",
+    "result": "V1.2 installed in the real Codex client and manually accepted",
+    "installedVersionRecord": "26.928.40906 (build 12694)"
+  }
+}

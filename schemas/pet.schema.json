@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Local check derived from bundled Codex V2 contract; not official JSON Schema",
+  "type": "object",
+  "required": ["id", "displayName", "description", "spriteVersionNumber", "spritesheetPath"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"const": "esign-ai-elephant"},
+    "displayName": {"type": "string", "minLength": 1},
+    "description": {"type": "string", "minLength": 1},
+    "spriteVersionNumber": {"const": 2},
+    "spritesheetPath": {"const": "spritesheet.webp"}
+  }
+}
