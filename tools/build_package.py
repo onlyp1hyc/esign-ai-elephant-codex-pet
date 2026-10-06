@@ -273,7 +273,7 @@ def archive():
             for name in runtime:
                 z.write(ROOT/name,'esign-ai-elephant/'+name)
     folders=['frames','native-frames','exports','source','previews','demo','tools','schemas']
-    files=[ROOT/p for p in ['README.md','LICENSE','BRAND_ASSETS.md','.gitignore','manifest.md','visual-audit.md','release-validation.json','requirements.txt','pet.json','spritesheet.webp',
+    files=[ROOT/p for p in ['README.md','README.zh-CN.md','LICENSE','BRAND_ASSETS.md','.gitignore','manifest.md','visual-audit.md','release-validation.json','requirements.txt','pet.json','spritesheet.webp',
                             'spritesheet.json','spritesheet_semantic.json','spritesheet_semantic.webp','business-states.json','preview.png','direction-preview.png']]
     for folder in folders:
         files.extend(p for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts

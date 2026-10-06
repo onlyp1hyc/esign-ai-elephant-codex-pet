@@ -1,5 +1,7 @@
 # eSign AI Elephant Codex Pet
 
+**[简体中文使用说明](./README.zh-CN.md)** · English
+
 A personal, unofficial and non-commercial Codex desktop pet project based on the company's elephant mascot.
 
 个人制作的 eSign AI 小象桌面宠物，用于个人作品展示、实验及内部交流。
@@ -42,6 +44,24 @@ The complete demo exposes all nine semantic states. Codex uses fixed native rows
 
 ## Installation
 
+### Let Codex install it (recommended)
+
+Open a local Codex chat and paste this instruction. [中文安装指令](./README.zh-CN.md#交给-codex-安装推荐)
+
+```text
+Install eSign AI Elephant Codex Pet V1.2 from https://github.com/onlyp1hyc/esign-ai-elephant-codex-pet on this computer. Read the README, download and review tools/install_release.py, then run it with Python 3. Download only the v1.2.0 installation ZIP, verify the pinned SHA-256, and install into ${CODEX_HOME:-$HOME/.codex}/pets/esign-ai-elephant. If the identical version exists, report it; if another same-name pet exists, stop without overwriting it. Follow the current network and directory permission flow. After installation, guide me to refresh Settings → Pets and select eSign AI 小象.
+```
+
+The installer uses only Python's standard library, requires no repository clone or API credentials, and preserves existing pets. Run Codex on the computer where you want the pet installed. Refreshing and selecting the installed pet in Settings is the final step.
+
+On macOS / Linux with `curl` and Python 3.9+, you can also run:
+
+```bash
+curl -fsSL 'https://github.com/onlyp1hyc/esign-ai-elephant-codex-pet/raw/refs/heads/codex/asset-pack/tools/install_release.py' | python3 -
+```
+
+### Manual installation
+
 1. Download **`esign-ai-elephant-codex-v2.zip`** from the [v1.2 Release](https://github.com/onlyp1hyc/esign-ai-elephant-codex-pet/releases/tag/v1.2.0) (about **1.55 MB**). No clone or Python installation is needed.
 2. Unzip it. Keep the `esign-ai-elephant` folder with its two files together.
 3. Place that folder in `~/.codex/pets/`. If `CODEX_HOME` is customized, use `$CODEX_HOME/pets/`. Back up and rename any existing same-name folder before replacing it.
@@ -81,6 +101,7 @@ python3 -m pip install -r requirements.txt
 python3 tools/validate_package.py
 node tools/test_demo.cjs
 python3 tools/validate_revision.py
+python3 -m unittest discover -s tools -p 'test_install_release.py'
 ```
 
 The resource validator checks 1,953 conditions, including manifest fields, alpha, dimensions, frame counts, atlas pixels, exports and safe installation into a temporary directory. Revision checks verify retained approved source hashes; comparisons to private old packages run only when those local archives exist. Automated checks do not perform interactive client testing. See [release-validation.json](./release-validation.json) for the public release check summary.
